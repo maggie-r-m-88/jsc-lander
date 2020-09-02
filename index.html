@@ -22,30 +22,28 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <a class="navbar-brand" href="#"><img src="images/JSC-logo2x.png"></a> 
             </div>
-
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-
-            </ul>
+            <div class="" id="navbar-left-fixed">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">OUR HISTORY</a>
+                    </li>
+                    <li class="nav-item nav-social"><span><img src="images/instagram-icon.png"></span> <span><img src="images/facebook-ico.png"></span> <span><img src="images/twitter-ico.png"></span></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <section>
+                        <img src="images/bg-contractors-dark.png"> <a class="nav-link">ESTATE MANAGEMENT</a>
+                    </section>
+                    <div class="divider"></div>
+                    <section>
+                        <img src="images/hk3-dark.png"> <a class="nav-link">ESTATE DEVELOPMENT</a>
+                    </section>
+                </div>
+            </div>
         </nav>
 
         <!-- Page Content -->
@@ -53,14 +51,12 @@
             <!-- We'll fill this with dummy content -->
             <nav class="mobile-navigation">
                 <div class="container">
-                    <div class="float-left">
+                    <div class="mobile-logo float-none">
                         <img src="images/jsc-logo-sm-nav.png">
                     </div>
-                    <div class="float-right">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span>Toggle Sidebar</span>
-                        </button>
+                    <div id="sidebarCollapse">
+                            <span>
+                            </span>
                     </div>
                 </div>
             </nav>
@@ -248,45 +244,6 @@
     </div>  
 
 
-
-   <!--<div class="mobile-nav">
-        <a class="mobile-logo">
-            <img src="images/jsc-logo-sm-nav.png">
-        </a>
-        <a href="javascript:void(0)" class="menu">
-            <span>
-            </span>
-        </a>
-    </div>
-    <nav class="navbar navbar-expand-md fixed-left navbar-slide-nav">
-            <a class="navbar-brand" href="#"><img src="images/JSC-logo2x.png"></a> 
-            <div class="" id="navbar-left-fixed">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link">EVENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">OUR HISTORY</a>
-                    </li>
-                    <li class="nav-item nav-social"><span><img src="images/instagram-icon.png"></span> <span><img src="images/facebook-ico.png"></span> <span><img src="images/twitter-ico.png"></span></li>
-                </ul>
-                <div class="sidebar-footer">
-                    <section>
-                        <img src="images/bg-contractors-dark.png"> <a class="nav-link">ESTATE MANAGEMENT</a>
-                    </section>
-                    <div class="divider"></div>
-                    <section>
-                        <img src="images/hk3-dark.png"> <a class="nav-link">ESTATE DEVELOPMENT</a>
-                    </section>
-                </div>
-            </div>
-        </nav>
-    -->
-
-
-
-
-
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -303,6 +260,7 @@ $(document).ready(function () {
 
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
+        $(this).toggleClass('open');
     });
 
 });
