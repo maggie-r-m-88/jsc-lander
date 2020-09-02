@@ -17,22 +17,36 @@ h3{
 	}
 }
 @media (min-width:768px) {
-	body {
-		margin-left: 256px
-	}
+
 }
-/* Image Map */
 
 
-.navbar.fixed-left {
+
+#sidebar{
+	width: 250px;
+	transition: all 0.3s;
+	overflow-y: scroll;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+	background: url("../images/grunge-texture-55.png") #EDECE6;
+}
+
+#content{
+	min-height: 100vh;
+	position: relative;
+	margin-left: 250px;
+}
+/*.navbar.fixed-left {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	width: 250px;
 	z-index: 1030;
 	background: url("../images/grunge-texture-55.png") #EDECE6;
 }
-
+*/
 .navbar-brand{
 	max-width: 200px;
 	margin: 0 auto;
@@ -40,6 +54,40 @@ h3{
 .navbar-brand img{
 	width: 100%;
 }
+
+.nav-social{
+	padding-top: 30px;
+}
+
+.nav-social span{
+	display: inline-block;
+}
+
+.nav-social span:nth-child(-n+2) {
+    padding-right: 15px;
+}
+.sidebar-footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.sidebar-footer section{
+	padding-bottom: 2em;
+}
+.sidebar-footer section img{
+	display: block;
+	margin: 0 auto;
+}
+
+.sidebar-footer .divider{
+	border-bottom: 1px solid #707070;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+
+
 .container-full{
 	max-width: 100%;
 	padding: 0;
@@ -187,6 +235,32 @@ h3{
 	line-height: 40px;
 }
 
+/* Parallax Sections */
+.ss-container{
+	color: #000;
+}
+.ss-container .first-slide .ss-left{
+	width: 33.3333%;
+}
+
+.ss-container .first-slide .ss-right{
+	width: 66.6666%;
+	background: url("../images/blueprints-01.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+	z-index: -2;
+}
+.ss-container h1.bigText{
+	font-size: 90px;
+	left: 80px;
+	 position:relative;
+    font-weight: 400;
+    padding: 30px 5px 10px 5px;
+	margin: 0px 15px;
+	text-shadow: 0px 1px 1px #fff;
+}
+
+
 .final-result-hero{
 	background-image: url("../images/jsc-final-hero.jpg");
 	background-size: cover;
@@ -249,7 +323,16 @@ h3{
 	width: 80%;
 	display: block;
 }
-
+.contact-col{
+	padding: 0;
+	text-align: center;
+}
+.contact-col img{
+	margin-right: 10px;
+}
+.phone{
+	padding-right: 10px;
+}
 
 @media (min-width:768px) {
 	.navbar.fixed-left {
