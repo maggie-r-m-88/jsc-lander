@@ -16,7 +16,6 @@ h3{
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
-
 .wrapper {
     display: flex;
     width: 100%;
@@ -126,6 +125,7 @@ a[data-toggle="collapse"] {
     width: 100%;
     min-height: 100vh;
     transition: all 0.3s;
+    margin-left: 250px;
 }
 .mobile-navigation{
 	display: none;
@@ -252,6 +252,62 @@ a[data-toggle="collapse"] {
     left: 28%;
 }
 
+.top-logos{
+	position: relative;
+}
+
+.top-logos:after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -30px;
+    width: 0;
+    z-index: 1;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #FFFFFF;
+}
+
+.top-logos .col{
+	text-align: center;
+	padding: 20px 0;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.top-logos .col img{
+	margin: 0 auto;
+	filter: opacity(60%);
+	-webkit-filter: opacity(60%);
+	cursor: pointer;
+}
+
+.top-logos .col:hover img{
+	filter: opacity(100%);
+	-webkit-filter: opacity(100%);
+}
+.circa-sm{
+	width: 130px;
+}
+
+.pc-sm{
+	width: 210px
+}
+
+.tobins-sm{
+	width: 122px;
+}
+
+.sos-sm{
+	width: 138px;
+}
+
+.intrigues-sm{
+	width: 205px;
+}
+
 .slider-container{
 	position:relative;
 }
@@ -268,6 +324,27 @@ a[data-toggle="collapse"] {
     border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	border-bottom: 30px solid #FFFFFF;
+}
+
+.slide-logo-container{
+	justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+.slider-logo img{
+	margin-left: auto;
+	display: block;
+}
+
+.carousel{
+	padding: 30px 0;
+}
+
+.slide-content h3{
+	color: #55B1FF;
+}
+.slide-content p{
+	font-size: 15px;
 }
 
 .jsc-hero{
@@ -453,6 +530,9 @@ a[data-toggle="collapse"] {
     }
     #sidebarCollapse span {
         display: none;
+    }
+    #content{
+    	margin-left: 0;
     }
 }
 

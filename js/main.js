@@ -4,15 +4,38 @@
 
 $(function() {
 
+    $(document).ready(function () {
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('open');
+        });
+
+    });
+
+        $('#top-slider').carousel({
+      interval: 2000
+    })
    
     $('.spots .marker').on('click', function() {
         var index = $(this).index();
+        console.log(index)
        $('#top-slider').carousel(index);
     });
 
-    $('#top-slider').carousel({
-      interval: 2000
-    })
+    $('.top-logos .col img').on('click', function() {
+        var slideID = $(this).attr('id').replace('slide-','')
+        var index = +slideID;
+        console.log(index)
+        $('#top-slider').carousel(index);
+        $(".slider-container").show();
+        $('.top-logos').hide();
+      
+    });
+
+
+
+
             var $sidescroll = (function() {
                     
                     // the row elements
