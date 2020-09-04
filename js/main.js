@@ -14,23 +14,38 @@ $(function() {
     });
 
         $('#top-slider').carousel({
-      interval: 2000
-    })
+            interval: false
+        })
    
     $('.spots .marker').on('click', function() {
+
+
+       
+
+        $('.top-logos').slideUp(1500);
+        $(".slider-container").show()
         var index = $(this).index();
         console.log(index)
        $('#top-slider').carousel(index);
     });
+
+
 
     $('.top-logos .col img').on('click', function() {
         var slideID = $(this).attr('id').replace('slide-','')
         var index = +slideID;
         console.log(index)
         $('#top-slider').carousel(index);
-        $(".slider-container").show();
-        $('.top-logos').hide();
-      
+        $(".slider-container").slideDown(500);
+        $('.top-logos').slideUp(500);
+
+
+    });
+
+    $('.slider-container .close').on('click', function() {
+        $('.top-logos').slideDown(500);
+        $(".slider-container").slideUp(500)
+        
     });
 
 
