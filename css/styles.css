@@ -216,14 +216,28 @@ a[data-toggle="collapse"] {
     position: absolute;
   	text-align: center;
   	line-height: 100px;
+  	font-family: 'Oswald', sans-serif;
     font-size: 20px;
-  	font-weight: bold;
+  	font-weight: 400;
   	color: #fff;
     width: 100px;
     height: 100px;
 	border: 3px solid #FFF;
 	border-radius: 50px;
-	background-color: #55B1FF;
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+.hotspot .spot:not([href]):not([tabindex]) {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: .7;
+}
+
+.hotspot .marker.active .spot{
+ 	background-color: #55B1FF;
+ 	color: rgba(255, 255, 255, 1);
+ 	opacity: 1;
 }
 /*.hotspot .spot:hover {
     -webkit-transform: rotate(45deg);
@@ -380,9 +394,6 @@ a[data-toggle="collapse"] {
 	transform: translateX(0);
 	transform: translate3d(0, 0, 0);
 }
-
-
-
 
 
 .slide-content h3{
