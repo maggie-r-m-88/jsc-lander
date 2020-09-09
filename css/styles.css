@@ -357,7 +357,7 @@ a[data-toggle="collapse"] {
 
 .carousel-fade .carousel-item {
 	opacity: 0;
-	transition-duration: .8s;
+	transition-duration: 0.5s;
 	transition-property: opacity;
 }
 
