@@ -500,25 +500,42 @@ a[data-toggle="collapse"] {
 .ss-container{
 	color: #000;
 }
-.ss-container .first-slide .ss-left{
-	width: 33.3333%;
+
+.ss-container h1.bigText{
+	font-size: 90px;
+	 position:relative;
+    font-weight: 400;
+	text-shadow: 0px 1px 1px #fff;
 }
 
-.ss-container .first-slide .ss-right{
+.ss-container .parallax-one .ss-left{
+	width: 33.3333%;
+}
+.ss-container .parallax-one h1.bigText{
+	left: 80px;
+	padding: 30px 5px 10px 5px;
+	margin: 0px 15px;
+}
+.ss-container .parallax-one .ss-right{
 	width: 66.6666%;
 	background: url("../images/blueprints-01.jpg");
 	background-repeat: no-repeat;
 	height: 100%;
 	z-index: -2;
 }
-.ss-container h1.bigText{
-	font-size: 90px;
-	left: 80px;
-	 position:relative;
-    font-weight: 400;
-    padding: 30px 5px 10px 5px;
-	margin: 0px 15px;
-	text-shadow: 0px 1px 1px #fff;
+.ss-container .parallax-two .ss-left{
+	padding-left: 2%;
+}
+
+.ss-container .parallax-two .ss-right{
+	height: 100%;
+	 display: flex;
+  	justify-content: center;
+}
+.ss-container .parallax-two img{
+	width: 100%;
+	margin-left: 0 auto;
+	display: block;
 }
 
 
