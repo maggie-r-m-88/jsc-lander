@@ -445,7 +445,7 @@ a[data-toggle="collapse"] {
 
 .jsc-hero h1, .final-result-hero h1{
 	color: #FFFFFF;
-	font-size: 90px;
+	font-size: 75px;
 }
 
 .story{
@@ -496,48 +496,64 @@ a[data-toggle="collapse"] {
 	line-height: 40px;
 }
 
+
 /* Parallax Sections */
 .ss-container{
 	color: #000;
 }
 
 .ss-container h1.bigText{
-	font-size: 90px;
+	font-size: 80px;
 	 position:relative;
     font-weight: 400;
 	text-shadow: 0px 1px 1px #fff;
 }
 
-.ss-container .parallax-one .ss-left{
-	width: 33.3333%;
-}
+
 .ss-container .parallax-one h1.bigText{
 	left: 80px;
 	padding: 30px 5px 10px 5px;
 	margin: 0px 15px;
 }
+
+.ss-container .ss-left{
+	padding-left: 3%;
+	height: 100%;
+	display: table;
+	position: relative;
+}
+
+.ss-container .ss-right{
+	height: 100%;
+	display: table;
+	position: relative;
+	padding-right: 3%;
+
+}
+
+.ss-container .parallax-one .ss-left{
+	width: 33.3333%;
+	padding: 0;
+}
+
 .ss-container .parallax-one .ss-right{
 	width: 66.6666%;
 	background: url("../images/blueprints-01.jpg");
 	background-repeat: no-repeat;
 	height: 100%;
 	z-index: -2;
-}
-.ss-container .parallax-two .ss-left{
-	padding-left: 2%;
-}
+	padding: 0;
 
-.ss-container .parallax-two .ss-right{
-	height: 100%;
-	 display: flex;
-  	justify-content: center;
 }
-.ss-container .parallax-two img{
+.centered-content{
+	display: table-cell;
+  	vertical-align: middle;
+}
+.ss-container img{
 	width: 100%;
 	margin-left: 0 auto;
 	display: block;
 }
-
 
 .final-result-hero{
 	background-image: url("../images/jsc-final-hero.jpg");
