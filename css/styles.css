@@ -195,7 +195,9 @@ a[data-toggle="collapse"] {
 	margin-right: 15px;
 }
 
-/* Image Map */
+/* ---------------------------------------------------
+    IMAGE MAP
+----------------------------------------------------- */
 .hotspot img {
 	display: block;
 	width: 100%;
@@ -239,13 +241,19 @@ a[data-toggle="collapse"] {
  	color: rgba(255, 255, 255, 1);
  	opacity: 1;
 }
-/*.hotspot .spot:hover {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}*/
+
+.hotspot .marker .spot:hover{
+ 	background-color: #55B1FF;
+ 	color: rgba(255, 255, 255, 1);
+ 	opacity: 0.6;
+}
+
+.hotspot .marker.active .spot:hover{
+ 	background-color: #55B1FF;
+ 	color: rgba(255, 255, 255, 1);
+ 	opacity: 1;
+}
+
 .hotspot #spot-01, #spot-02, #spot-03 {
 	display: inline-block;
 	min-width: 250px;
@@ -265,6 +273,11 @@ a[data-toggle="collapse"] {
     top: 31%;
     left: 28%;
 }
+
+/* ---------------------------------------------------
+    LOGO CAROUSEL NAVIGATION
+----------------------------------------------------- */
+
 .logo-slide-toggle{
 	position: relative;
 }
@@ -323,6 +336,10 @@ a[data-toggle="collapse"] {
 .intrigues-sm{
 	width: 205px;
 }
+
+/* ---------------------------------------------------
+    CAROUSEL
+----------------------------------------------------- */
 
 .slider-container{
 	position:relative;
@@ -433,6 +450,9 @@ a[data-toggle="collapse"] {
 	z-index: 999;
 }
 
+/* ---------------------------------------------------
+    SECONDARY SECTIONS
+----------------------------------------------------- */
 
 .jsc-hero{
 	background-image: url("../images/JSC-Hero.png");
@@ -506,7 +526,9 @@ a[data-toggle="collapse"] {
 }
 
 
-/* Parallax Sections */
+/* ---------------------------------------------------
+    ANIMATED SECTIONS
+----------------------------------------------------- */
 
 .ss-container{
     width: 100%;
@@ -596,6 +618,10 @@ a[data-toggle="collapse"] {
 	background-size: cover;
 	height: 740px;
 }
+
+/* ---------------------------------------------------
+    FOOTER 
+----------------------------------------------------- */
 
 #footer{
 	background: url("../images/grunge-texture-footer.png") #100F0F;
