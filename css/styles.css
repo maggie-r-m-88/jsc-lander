@@ -619,6 +619,20 @@ a[data-toggle="collapse"] {
 	height: 740px;
 }
 
+.gallery{
+	padding: 60px 0;
+}
+
+.gallery img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.gallery .col{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 /* ---------------------------------------------------
     FOOTER 
 ----------------------------------------------------- */
