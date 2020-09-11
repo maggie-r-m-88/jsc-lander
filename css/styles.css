@@ -457,6 +457,11 @@ a[data-toggle="collapse"] {
 .container-full .no-right-margin{
 	margin-right: 0;
 }
+
+.story-left-text{
+	padding: 20px 50px 0px 40px;
+
+}
 .blockquote{
 	border-left: 5px solid #000000;
 	padding-left: 20px;
@@ -464,19 +469,23 @@ a[data-toggle="collapse"] {
 	line-height:1.9em;
 	margin-top: 40px;
 }
+
 .pop-out{
 	background: #FFFFFF;
-	padding: 40px 30px 30px 40px;
+	margin-top: 50px;
+	padding: 60px 40px 50px 40px;
 	border-radius: 20px 0px 0px 20px;
 	-webkit-box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.16);
-	-moz-box-shadow:    0px 30px 50px 0px rgba(0, 0, 0, 0.16);
-	box-shadow:         0px 30px 50px 0px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.16);
+	display: table;
+	position: relative;
 }
 
 .pop-out .logos-row{
    display: flex;
    align-items:center;
-   padding-bottom: 20px;
+   padding-bottom: 30px;
 }
 
 .jsc-secondary{
@@ -498,9 +507,46 @@ a[data-toggle="collapse"] {
 
 
 /* Parallax Sections */
+
 .ss-container{
-	color: #000;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    float: left;
+    color: #000;
+	overflow: hidden;
 }
+
+.ss-row{
+    width: 100%;
+    clear: both;
+    float: left;
+    position: relative;
+    padding: 30px 0;
+    height: 100vh;
+}
+.ss-left, .ss-right{
+    float: left;
+    width: 48%;
+    position: relative;
+}
+.ss-right{
+    padding-left: 2%;
+    height: 100%;
+	display: table;
+	position: relative;
+	padding-right: 3%;
+}
+.ss-left{
+    text-align: right;
+    float: left;
+    padding-right: 2%;
+    padding-left: 3%;
+	height: 100%;
+	display: table;
+	position: relative;
+}
+
 
 .ss-container h1.bigText{
 	font-size: 80px;
@@ -516,20 +562,6 @@ a[data-toggle="collapse"] {
 	margin: 0px 15px;
 }
 
-.ss-container .ss-left{
-	padding-left: 3%;
-	height: 100%;
-	display: table;
-	position: relative;
-}
-
-.ss-container .ss-right{
-	height: 100%;
-	display: table;
-	position: relative;
-	padding-right: 3%;
-
-}
 
 .ss-container .parallax-one .ss-left{
 	width: 33.3333%;
@@ -544,6 +576,10 @@ a[data-toggle="collapse"] {
 	z-index: -2;
 	padding: 0;
 
+}
+
+.parallax-four{
+	height: 80vh;
 }
 .centered-content{
 	display: table-cell;
