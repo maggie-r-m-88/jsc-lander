@@ -8,6 +8,11 @@ $(function() {
     $('#top-slider').carousel({
         interval: false
     })
+
+
+
+
+
     /* Marker on click ~ Slider Logic */
     $('.spots .marker').on('click', function() {
 
@@ -28,29 +33,45 @@ $(function() {
         $(".slider-container").addClass('open')
     });
 
+
+
     /* Logo Row click ~ Slider Logic */
-    $('.top-logos .col img').on('click', function() {
+    $('.top-logos .col').on('click', function() {
 
-        $(this).addClass("active")
-        //slide logo row up
-        $('.top-logos').slideUp(500);
-        //remove invisibility from active first slide
-        var slideID = $(this).attr('id').replace('slide-', '')
-        var index = +slideID;
-        var carouselItem = "#carousel-item-" + index
-        if (carouselItem == "#carousel-item-0") {
-            $("#carousel-item-0").removeClass("invisible-slide")
-        }
+            var Swidth = $(window).width();
+            if (Swidth <= 768) {
+              //Code for mobile devices
+              $(this).find('img').addClass("active")
+              $('.spots .marker').removeClass("active");
+              var slideID = $(this).find('img').attr('id').replace('slide-', '')
+              var index = +slideID;
+              $('.spots .marker').eq(index).addClass("active")
+ 
+            } else {
+                //Code for other devices
+                $(this).find('img').addClass("active")
+                //slide logo row up
+                $('.top-logos').slideUp(500);
+                //remove invisibility from active first slide
+                var slideID = $(this).find('img').attr('id').replace('slide-', '')
+                var index = +slideID;
+                var carouselItem = "#carousel-item-" + index
+                if (carouselItem == "#carousel-item-0") {
+                    $("#carousel-item-0").removeClass("invisible-slide")
+                }
 
-        //remove highlight
-        $('.spots .marker').removeClass("active");
-        $('.spots .marker').eq(index).addClass("active")
+                //remove highlight
+                $('.spots .marker').removeClass("active");
+                $('.spots .marker').eq(index).addClass("active")
 
-        // Go to the right slide and show the slider, double check for first slide invisiblity
-        $('#top-slider').carousel(index);
-        $(".slider-container").addClass('open')
-        $(".slider-container").fadeIn();
-        $("#carousel-item-0").removeClass("invisible-slide")
+                // Go to the right slide and show the slider, double check for first slide invisiblity
+                $('#top-slider').carousel(index);
+                $(".slider-container").addClass('open')
+                $(".slider-container").fadeIn();
+                $("#carousel-item-0").removeClass("invisible-slide")
+            }
+
+        
     });
     /* Close Slider */
     $('.slider-container .close').on('click', function() {
