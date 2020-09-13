@@ -273,6 +273,22 @@ a[data-toggle="collapse"] {
     top: 31%;
     left: 28%;
 }
+#spot-04 {
+	position: absolute;
+    top: 42%;
+    left: 41%;
+}
+#spot-05 {
+	position: absolute;
+    top: 57%;
+    left: 59%;
+}
+
+#spot-06 {
+	position: absolute;
+    top: 37%;
+    left: 70%;
+}
 
 /* ---------------------------------------------------
     LOGO CAROUSEL NAVIGATION
@@ -357,8 +373,13 @@ a[data-toggle="collapse"] {
     align-items: center;
     display: flex;
 }
+
+.slider-logo{
+	width: 100%;
+	max-width: 280px;
+}
 .slider-logo img{
-	margin-left: auto;
+	margin: 0 auto;
 	display: block;
 	width: 100%;
 }
@@ -390,6 +411,7 @@ a[data-toggle="collapse"] {
 	opacity: 0;
 	transition-duration: 0.5s;
 	transition-property: opacity;
+	background: #FFF;
 }
 
 .carousel-fade .carousel-item.active,
@@ -449,6 +471,56 @@ a[data-toggle="collapse"] {
 	opacity: .3;
 	z-index: 999;
 }
+
+/* ---------------------------------------------------
+    SECONDARY SECTIONS - TESTING PARALLAX
+----------------------------------------------------- */
+/* layout */
+.wrapper-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+
+/* Parallax Styles */
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 8px;
+  perspective-origin: 0%;
+  display: flex;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0px);
+}
+
+.foreground {
+  margin-top: auto;
+  margin-bottom: 50px;
+  
+  transform-origin: 0;
+  transform: translateZ(3px) scale(0.625);
+  
+  /* Uncomment the code below to see the difference the scale property makes! */
+   transform: translateZ(3px); 
+   transform: translateZ(0) scale(1); 
+}
+
+.foreground h1 {
+  color: #FFF;
+  font-size: 75px;
+}
+
 
 /* ---------------------------------------------------
     SECONDARY SECTIONS
@@ -612,6 +684,10 @@ a[data-toggle="collapse"] {
 	margin-left: 0 auto;
 	display: block;
 }
+
+/* ---------------------------------------------------
+    GALLERY
+----------------------------------------------------- */
 
 .final-result-hero{
 	background-image: url("../images/jsc-final-hero.jpg");
