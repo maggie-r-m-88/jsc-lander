@@ -822,7 +822,7 @@ a[data-toggle="collapse"] {
 	}
 	.top-logos img{
 		opacity: 0;
-		transition: 0.3s all ease-in;
+		transition: 0.2s all ease-in;
 		width: 122px;
 	}
 
@@ -848,6 +848,13 @@ a[data-toggle="collapse"] {
     	height: 70px;
     	border: 2px solid #FFF;
 	}
+	.jsc-hero{
+		height: 200px;
+	}
+	.jsc-hero h1, .final-result-hero h1{
+	color: #FFFFFF;
+	font-size: 28px;
+}
 
 }
 
@@ -868,4 +875,8 @@ a[data-toggle="collapse"] {
 	#spot-02{
 		left: 10%;
 	}
+	.jsc-hero .align-self-end{
+		padding: 0;
+	}
+
 }
