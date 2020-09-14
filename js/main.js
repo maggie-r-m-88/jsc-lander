@@ -88,6 +88,7 @@ $(function() {
 
     });
 
+
     /* Parallax Sections */
     var $sidescroll = (function() {
         // the row elements
@@ -284,5 +285,13 @@ $(function() {
             init: init
         };
     })();
-    $sidescroll.init();
+
+    var Swidth = $(window).width();
+        if (Swidth > 768) {
+            $sidescroll.init();
+        }
+        else{
+
+        }
+    
 });
