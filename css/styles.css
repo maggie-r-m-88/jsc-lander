@@ -851,7 +851,7 @@ a[data-toggle="collapse"] {
 	.jsc-hero{
 		height: 200px;
 	}
-	.jsc-hero h1, .final-result-hero h1{
+	.jsc-hero h1 {
 	color: #FFFFFF;
 	font-size: 28px;
 	}
@@ -872,11 +872,13 @@ a[data-toggle="collapse"] {
 		padding: 50px 0 50px 0;
 
 	}
-	.logos-row{
+	.container-full .pop-out .logos-row{
 		display: block;
 		margin: 0 auto;
 		align-items: normal;
     	width: 300px;
+    	padding: 0;
+    	margin-bottom: 20px;
 	}
 	h3{
 		font-size: 20px;
@@ -907,12 +909,12 @@ a[data-toggle="collapse"] {
 	    float: none;
 	    display: block;
 	    background: url("../images/blueprints-01_mobile.jpg");
-		height: 300px;
+		height: 400px;
 		background-size: cover;
 	}
 	.ss-container  h1.bigText{
 		font-size: 30px;
-		padding: 15px;
+		padding: 20px 15px 10px 15px;
 		margin: 0;
 	}
 	.ss-container p{
@@ -939,6 +941,23 @@ a[data-toggle="collapse"] {
 		display: block;
 		width: 100%;
 	}
+	.parallax-three .ss-left{
+		display: none;
+	}
+	.ss-container .hide{
+		display: block;
+	}
+	.final-result-hero{
+		height: 350px;
+	}
+
+	.final-result-hero .align-self-end{
+		padding: 0;
+	}
+		.final-result-hero h1{
+	color: #FFFFFF;
+	font-size: 45px;
+	}
 
 
 }
@@ -960,6 +979,9 @@ a[data-toggle="collapse"] {
 	}
 	#spot-02{
 		left: 10%;
+	}
+	.ss-container .parallax-one .ss-left {
+		height: 300px;
 	}
 
 
