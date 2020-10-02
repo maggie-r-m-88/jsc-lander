@@ -9,10 +9,6 @@ $(function() {
         interval: false
     })
 
-
-
-
-
     /* Marker on click ~ Slider Logic */
     $('.spots .marker').on('click', function() {
 
@@ -32,7 +28,6 @@ $(function() {
         $(".slider-container").show();
         $(".slider-container").addClass('open')
     });
-
 
 
     /* Logo Row click ~ Slider Logic */
@@ -70,9 +65,9 @@ $(function() {
                 $(".slider-container").fadeIn();
                 $("#carousel-item-0").removeClass("invisible-slide")
             }
-
-        
     });
+
+
     /* Close Slider */
     $('.slider-container .close').on('click', function() {
         $('.spots .marker').removeClass("active");
@@ -86,6 +81,12 @@ $(function() {
         var activeSlide = $(this).find(".active").index();
         $('.spots .marker').eq(activeSlide).addClass("active")
 
+    });
+
+    $(".nav-link.history").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#story").offset().top
+         }, 2000);
     });
 
 

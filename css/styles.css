@@ -53,6 +53,13 @@ h3 {
 	margin: 0 auto;
 	display: block;
 }
+.nav-link{
+	cursor: pointer;
+	color: #444444;
+}
+.nav-link:hover{
+	color: #444444;
+}
 .navbar-brand img {
 	width: 100%;
 }
@@ -75,10 +82,10 @@ h3 {
 .nav-social {
 	padding-top: 30px;
 }
-.nav-social span {
+.nav-social a {
 	display: inline-block;
 }
-.nav-social span:nth-child(-n+2) {
+.nav-social a:nth-child(-n+2) {
 	padding-right: 15px;
 }
 .sidebar-header {
