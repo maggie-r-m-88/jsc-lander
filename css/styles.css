@@ -410,12 +410,20 @@ a[data-toggle="collapse"] {
 	letter-spacing: 0.9px;
 }
 .social-icons img {
-	transform: rotate(279deg);
 	-webkit-transform: rotate(270deg);
 	-moz-transform: rotate(270deg);
 	-o-transform: rotate(270deg);
 	-ms-transform: rotate(270deg);
 	transform: rotate(270deg);
+}
+
+.social-icons img.pinterest{
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	-ms-transform: none;
+	transform: none;
+	width: 21px;
 }
 .slider-container .close {
 	top: 30px;
