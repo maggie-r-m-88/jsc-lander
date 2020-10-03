@@ -821,7 +821,7 @@ a[data-toggle="collapse"] {
 	.hidden {
 		display: none;
 	}
-	.ss-row {
+	.ss-row, .ss-row.parallax-one {
 		height: auto;
 		float: none;
 		padding: 0;
