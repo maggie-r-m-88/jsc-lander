@@ -746,7 +746,25 @@ a[data-toggle="collapse"] {
 		background-blend-mode: multiply;
 		border: 1px solid #FFF;
 		height: 170px;
+		background-position: center center;
 	}
+
+	.top-logos .col2{
+		background-image: url("../images/portcity-office.jpeg");
+
+	}
+	.top-logos .col3{
+		background-image: url("../images/tobins-eat.jpg");
+	}
+
+	.top-logos .col3.drink{
+		background-image: url("../images/tobins-drink.jpg");
+	}
+
+	.top-logos .col4{
+		background-image: url("../images/intrigue-events.jpg");
+	}
+
 	.top-logos img {
 		opacity: 0;
 		transition: 0.2s all ease-in;
