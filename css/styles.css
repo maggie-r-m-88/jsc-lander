@@ -460,6 +460,9 @@ a[data-toggle="collapse"] {
 	background: url("../images/grunge-texture-55.png") #EDECE6;
 	background-size: contain;
 }
+.story a, .ss-container a{
+	color: #ce9c56;
+}
 .container-full .no-right-margin {
 	margin-right: 0;
 }
