@@ -143,6 +143,7 @@ a[data-toggle="collapse"] {
 }
 .mobile-logo img{
 	max-width: 100%;
+	width: 100%;
 }
 .mobile-navigation #sidebarCollapse {
 	position: absolute;
