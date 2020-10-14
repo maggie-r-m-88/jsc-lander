@@ -141,6 +141,9 @@ a[data-toggle="collapse"] {
 	height: 80px;
 	margin: 0 auto;
 }
+.mobile-logo img{
+	max- width: 100%;
+}
 .mobile-navigation #sidebarCollapse {
 	position: absolute;
 	cursor: pointer;
