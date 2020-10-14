@@ -658,6 +658,9 @@ a[data-toggle="collapse"] {
 	width: 115px;
 	max-width: 100%;
 }
+.footer-pc-logo{
+	max-width: 150px;
+}
 .address {
 	display: flex;
 	justify-content: center;
