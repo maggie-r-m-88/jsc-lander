@@ -602,6 +602,7 @@ a[data-toggle="collapse"] {
 }
 .acknowledgements img{
 	width: 120px;
+	max-width: 100%;
 }
 .acknowledgements h3{
 	margin: 0 auto;
