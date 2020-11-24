@@ -89,9 +89,7 @@ h3 {
 .nav-social a:nth-child(-n+2) {
 	padding-right: 15px;
 }
-.sidebar-header {
-	margin-bottom: 30px;
-}
+
 .sidebar-footer {
 	margin-top: 50px;
 	width: 100%;
@@ -312,13 +310,13 @@ a[data-toggle="collapse"] {
 	align-items: center;
 	display: flex;
 }
-.top-logos .col img, .top-logos .landscape-col img, .acknowledgements .col img {
+.top-logos .col img, .top-logos .landscape-col img{
 	margin: 0 auto;
 	filter: opacity(60%);
 	-webkit-filter: opacity(60%);
 	cursor: pointer;
 }
-.top-logos .col:hover img, .acknowledgements .col:hover img{
+.top-logos .col:hover img{
 	filter: opacity(100%);
 	-webkit-filter: opacity(100%);
 }
@@ -563,8 +561,7 @@ a[data-toggle="collapse"] {
 }
 .ss-container .parallax-one h1.bigText {
 	left: 80px;
-	padding: 30px 5px 10px 5px;
-	margin: 0px 15px;
+	margin: 0px;
 }
 .ss-container .parallax-one .ss-left {
 	width: 33.3333%;
@@ -603,9 +600,32 @@ a[data-toggle="collapse"] {
 .acknowledgements img{
 	width: 120px;
 	max-width: 100%;
+	margin: 0 auto;
 }
 .acknowledgements h3{
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
+}
+.hcf-img{
+	padding: 20px 5px;
+	background: #666;
+}
+.acknowledgements .nps-img{
+	height: 140px;
+	width: auto;
+}
+/* ---------------------------------------------------
+    MAP
+----------------------------------------------------- */
+
+.map{
+	height: 350px;
+	background: url("../images/peninsula-map.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+.map img{
+	max-width: 100%;
+	display: none;
 }
 /* ---------------------------------------------------
     GALLERY
@@ -776,7 +796,7 @@ a[data-toggle="collapse"] {
 		font-family: 'Oswald';
 		color: #FFF;
 	}
-	/* Need to replace these with individual background images when I get them */
+	
 	.top-logos .col {
 		background-image: url("../images/circa-interior.png");
 		background-repeat: no-repeat;
@@ -935,6 +955,9 @@ a[data-toggle="collapse"] {
 	.parallax-three .ss-left {
 		display: none;
 	}
+	.parallax-four img {
+		width: 100vw;
+	}
 	.ss-container .hide {
 		display: block;
 	}
@@ -947,6 +970,9 @@ a[data-toggle="collapse"] {
 	.final-result-hero h1 {
 		color: #FFFFFF;
 		font-size: 45px;
+	}
+	.acknowledgements h3{
+		margin: 0 auto 20px auto;
 	}
 	.footer-col {
 		margin-bottom: 30px;
