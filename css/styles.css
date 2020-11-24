@@ -137,9 +137,8 @@ a[data-toggle="collapse"] {
 	height: 80px;
 }
 .mobile-logo {
-	width: 80px;
-	height: 80px;
-	margin: 0 auto;
+	width: 170px;
+	margin: 20px auto;
 }
 .mobile-logo img{
 	max-width: 100%;
@@ -262,8 +261,8 @@ a[data-toggle="collapse"] {
 }
 #spot-03 {
 	position: absolute;
-	top: 31%;
-	left: 28%;
+	top: 29%;
+	left: 42%;
 }
 #spot-04 {
 	position: absolute;
@@ -306,14 +305,14 @@ a[data-toggle="collapse"] {
 .top-logos span {
 	display: none;
 }
-.top-logos .col {
+.top-logos .col, .top-logos .landscape-col {
 	text-align: center;
 	padding: 20px 0;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 }
-.top-logos .col img {
+.top-logos .col img, .top-logos .landscape-col img {
 	margin: 0 auto;
 	filter: opacity(60%);
 	-webkit-filter: opacity(60%);
@@ -746,6 +745,12 @@ a[data-toggle="collapse"] {
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
+	.top-logos .landscape-col{
+		webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
 	.top-logos span {
 		position: absolute;
 		display: block;
@@ -772,7 +777,15 @@ a[data-toggle="collapse"] {
 
 	}
 	.top-logos .col3{
-		background-image: url("../images/tobins-eat.jpg");
+		background-image: url("../images/tobins-drink.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: rgba(0, 0, 0, 0.5);
+		background-blend-mode: multiply;
+		border: 1px solid #FFF;
+		height: 170px;
+		background-position: center -50px;
+		
 	}
 
 	.top-logos .col3.drink{
@@ -791,11 +804,11 @@ a[data-toggle="collapse"] {
 		transition: 0.2s all ease-in;
 		width: 122px;
 	}
-	.top-logos .col:hover {
+	.top-logos .col:hover, .top-logos .landscape-col:hover {
 		background: #54B0FE;
 		background-blend-mode: normal;
 	}
-	.top-logos .col:hover img {
+	.top-logos .col:hover img, .top-logos .landscape-col:hover img{
 		opacity: 1;
 	}
 	.marker {
