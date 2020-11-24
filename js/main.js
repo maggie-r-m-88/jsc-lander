@@ -294,5 +294,39 @@ $(function() {
         else{
 
         }
+
+
+    // Instagram Feed
+    (function($){
+        $(window).on('load', function(){
+            $.instagramFeed({
+                'username': 'jsc_events',
+                'container': "#instagram-feed2",
+                'display_profile': false,
+                'display_biography': false,
+                'display_gallery': true,
+                'display_captions': false,
+                'callback': null,
+                'styling': true,
+                'items': 4,
+                'items_per_row': 4,
+                'margin': .3
+            });
+
+            $.instagramFeed({
+                'username': 'tobins_market',
+                'container': "#instagram-feed3",
+                'display_profile': false,
+                'display_biography': false,
+                'display_gallery': true,
+                'display_captions': false,
+                'callback': null,
+                'styling': true,
+                'items': 4,
+                'items_per_row': 4,
+                'margin': .3
+            });
+        });
+    })(jQuery);
     
 });

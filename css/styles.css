@@ -595,7 +595,7 @@ a[data-toggle="collapse"] {
     Acknowledgments
 ----------------------------------------------------- */
 .acknowledgements{
-	margin: 100px 0 0 0;
+	margin: 60px 0 40px 0;
 }
 .acknowledgements img{
 	width: 120px;
@@ -974,9 +974,13 @@ a[data-toggle="collapse"] {
 	.acknowledgements h3{
 		margin: 0 auto 20px auto;
 	}
+	.ig-feed a, .instagram-sidecar, .instagram-image, .instagram-video{
+		width: 49.4% !important;
+	}
 	.footer-col {
 		margin-bottom: 30px;
 	}
+	
 
 }
 @media (max-width: 480px) {
