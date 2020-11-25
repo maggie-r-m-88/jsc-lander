@@ -494,11 +494,19 @@ a[data-toggle="collapse"] {
 	padding-bottom: 30px;
 }
 .jsc-secondary {
-	background-image: url("../images/jsc-secondary.jpg");
+	b
 	background-size: cover;
-	height: 900px;
+	height: 700px;
 	color: #FFF;
 	text-align: center;
+	position: relative;
+	background-image: url("../images/charleston-single-1.jpg");
+	background-position: center center;
+	background-image:
+    linear-gradient(black, black),
+    url("../images/charleston-single-1.jpg");
+  background-size: cover;
+  background-blend-mode: saturation;
 }
 .jsc-secondary-text {
 	display: flex;
@@ -598,17 +606,14 @@ a[data-toggle="collapse"] {
 	margin: 60px 0 40px 0;
 }
 .acknowledgements img{
-	width: 120px;
+	width: 130px;
 	max-width: 100%;
 	margin: 0 auto;
 }
 .acknowledgements h3{
 	margin: 0 auto 20px auto;
 }
-.hcf-img{
-	padding: 20px 5px;
-	background: #666;
-}
+
 .acknowledgements .nps-img{
 	height: 140px;
 	width: auto;
