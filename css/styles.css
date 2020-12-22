@@ -249,18 +249,18 @@ a[data-toggle="collapse"] {
 }
 #spot-01 {
 	position: absolute;
-	top: 8%;
-	left: 29%;
+	top: 21%;
+	left: 35%;
 }
 #spot-02 {
 	position: absolute;
-	top: 19%;
-	left: 16%;
+	top: 33%;
+	left: 25%;
 }
 #spot-03 {
 	position: absolute;
-	top: 29%;
-	left: 42%;
+	top: 40%;
+	left: 47%;
 }
 #spot-04 {
 	position: absolute;
@@ -269,13 +269,13 @@ a[data-toggle="collapse"] {
 }
 #spot-05 {
 	position: absolute;
-	top: 57%;
-	left: 59%;
+	top: 63%;
+	left: 72%;
 }
 #spot-06 {
 	position: absolute;
-	top: 37%;
-	left: 70%;
+	top: 42%;
+	left: 74%;
 }
 /* ---------------------------------------------------
     LOGO CAROUSEL NAVIGATION
@@ -610,8 +610,8 @@ a[data-toggle="collapse"] {
 	max-width: 100%;
 	margin: 0 auto;
 }
-.acknowledgements h3{
-	margin: 0 auto 20px auto;
+.acknowledgements h3, .ig-feed h3{
+	margin: 0 auto 30px auto;
 }
 
 .acknowledgements .nps-img{
@@ -1002,8 +1002,25 @@ a[data-toggle="collapse"] {
 		height: 60px;
 		border: 1px solid #FFF;
 	}
+	#spot-01{
+		left: 20%;
+		top: 19%;
+	}
 	#spot-02 {
-		left: 10%;
+		top: 27%;
+		left: 9%;
+	}
+	#spot-03{
+		top: 38%;
+		left: 35%;
+	}
+	#spot-05{
+    	top: 60%;
+    	left: 66%;
+	}
+	#spot-06{
+		left: 72%;
+		top: 40%;
 	}
 	.ss-container .parallax-one .ss-left {
 		height: 300px;
